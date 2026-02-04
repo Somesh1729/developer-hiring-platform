@@ -26,7 +26,7 @@ router.get('/available', async (req, res) => {
         dp.portfolio_url
       FROM developer_profiles dp
       JOIN users u ON dp.user_id = u.id
-      WHERE dp.availability_status = 'online'
+      WHERE dp.availability_status IN ('online', 'offline')
       ORDER BY dp.rating DESC, dp.total_hours_worked DESC`
     );
 
