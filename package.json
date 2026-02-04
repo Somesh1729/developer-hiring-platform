@@ -1,0 +1,17 @@
+{
+  "name": "dev-hiring-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Enterprise Developer Hiring Platform – React (JS/JSX) frontend, Node.js backend",
+  "scripts": {
+    "start": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "server": "cd server && npm run dev",
+    "server:start": "cd server && npm start",
+    "db:init": "cd server && npm run db:init",
+    "db:seed": "cd server && npm run db:seed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
